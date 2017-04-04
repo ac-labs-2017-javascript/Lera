@@ -11,8 +11,16 @@ function processText(text){
 
 	var listItems = Array.from($("#tiles").children("li"));
 	return listItems.map(function(li){
+
+		var prices = $(li).find(".pretVal");
+
 		return{
-			title : $(li).find(".title").text()
+			title : $(li).find(".title").text(),
+			ingredients : $(li).find(".ingrediente").text().trim(),
+			image : "http://dopopoco.ro" + $(li).find("img").attr("src"),
+			pretMic : $(prices[0]).text(),
+			pretMare : $(prices[1]).text(),
+			pizzeria: "Doppopoco"
 		};
 	});
 }
