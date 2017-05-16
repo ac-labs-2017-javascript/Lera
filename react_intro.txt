@@ -1,0 +1,5 @@
+#Tool
+npm install -g create-react-app
+
+#creaza boilerplate-ul pentru o applicatie react :)
+create-react-app pizza-scrapper-ui
